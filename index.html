@@ -22,6 +22,17 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "2VjAke_GkU3VZ_aBx",
+                });
+            })();
+        </script>
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -623,7 +634,7 @@
                                         <p class="help-block"></p>
                                     </div>
                                     <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                        <button class="btn" type="submit" id="sendMessageButton" onclick="sendMail()">Send Message</button>
                                     </div>
                                 </form>
                             </div>
